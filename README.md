@@ -1,19 +1,87 @@
-# React + Vite
+📋 Task Board — Interactive Kanban Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, modern Kanban-style task management web application built with React, Vite, and Tailwind CSS. It provides an intuitive drag-and-drop interface for organizing tasks across custom workflow stages.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Drag-and-Drop Task Organization: Seamlessly move tasks between columns (To Do, In Progress, Review, Done) using the HTML5 Drag & Drop API.
 
-## React Compiler
+Quick Task Creation: Add new tasks inline with autofocus and instant status assignment.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Task Deletion: Easily remove completed or unwanted tasks.
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Responsive Layout: Designed to adapt gracefully from mobile screens to wide desktop viewports.
 
-## Expanding the ESLint configuration
+Clean, Modern Aesthetic: Built with clean typography, balanced spacing, and subtle micro-interactions powered by Tailwind CSS and Lucide React icons.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+
+Framework: React
+
+Build Tool: Vite
+
+Styling: Tailwind CSS
+
+Icons: Lucide React
+
+🚀 Getting Started
+
+Prerequisites
+
+Ensure you have Node.js installed on your machine (v18 or higher recommended).
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/task-board.git
+cd task-board
+
+
+Install dependencies:
+
+npm install
+
+
+Install required icon set (if not already present):
+
+npm install lucide-react
+
+
+Start the development server:
+
+npm run dev
+
+
+Open in browser:
+Visit http://localhost:5173 in your browser.
+
+📁 Project Structure
+
+todo-app/
+├── public/              # Static assets
+├── src/
+│   ├── assets/          # Icons, images
+│   ├── App.css          # Global styling rules
+│   ├── App.jsx          # Main Kanban board component & drag-drop logic
+│   ├── index.css        # Tailwind CSS imports
+│   └── main.jsx         # Application entry point
+├── index.html           # HTML template
+├── package.json         # Project metadata and dependencies
+├── tailwind.config.js   # Tailwind configuration
+└── vite.config.js       # Vite build configuration
+
+
+🔮 Future Improvements
+
+[ ] Data Persistence: Store tasks in localStorage or sync with a Firebase/Supabase backend.
+
+[ ] Custom Columns: Allow users to add, rename, or delete columns.
+
+[ ] Task Details: Add priority badges, due dates, tags, and editable descriptions.
+
+[ ] Column Reordering: Drag columns to rearrange board layout.
+
+📄 License
+
+This project is licensed under the MIT License.
